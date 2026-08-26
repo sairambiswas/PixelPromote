@@ -1,0 +1,1928 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth antialiased selection:bg-[#8B1D2C] selection:text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BANANI | Luxury Indian Ethnic Couture, Sarees & Bridal Lehengas</title>
+    <meta name="description" content="Discover handcrafted Banarasi sarees, royal bridal lehengas, and festive shararas from BANANI. Flagships in Chandni Chowk & South Delhi. Worldwide express shipping." />
+    <meta name="theme-color" content="#8B1D2C" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                crimson: '#8B1D2C',
+                crimsonDark: '#66131F',
+                gold: '#C5A059',
+                goldDark: '#A07F3B',
+                cream: '#FAF8F5',
+                charcoal: '#1C1917',
+                stone: '#78716C',
+                border: '#E7E2DA',
+              }
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              serif: ['Cormorant Garamond', 'serif'],
+              luxury: ['Cinzel', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <style>
+      .font-serif-luxury {
+        font-family: 'Cinzel', serif;
+      }
+      .font-editorial {
+        font-family: 'Cormorant Garamond', serif;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.98); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FAF8F5;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C5A059;
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8B1D2C;
+      }
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#FAF8F5] text-[#1C1917] overflow-x-hidden min-h-screen flex flex-col font-sans selection:bg-[#8B1D2C] selection:text-white">
+    
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <header class="w-full sticky top-0 z-40 bg-white shadow-xs transition-all duration-300">
+      <div class="bg-[#8B1D2C] text-white text-[10px] sm:text-xs py-1.5 px-3 sm:px-4 font-normal">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <div class="hidden md:flex items-center gap-4 text-white/90">
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="truck" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+              Complimentary Worldwide Express Above ₹2,999
+            </span>
+            <span class="text-white/40">|</span>
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3 h-3 text-[#C5A059]"></i>
+              Flagship Ateliers: Chandni Chowk & South Delhi
+            </span>
+          </div>
+
+          <div class="w-full md:w-auto text-center font-medium flex items-center justify-center gap-1.5 sm:gap-2">
+            <span>10% Off First Order. Code:</span>
+            <span class="bg-white/20 px-2 py-0.5 rounded font-mono font-bold tracking-wider text-[#C5A059]">
+              BANANI10
+            </span>
+          </div>
+
+          <div class="hidden lg:flex items-center gap-3 text-white/90">
+            <button
+              type="button"
+              onclick="window.app.openModal('videoShopping')"
+              class="hover:text-[#C5A059] flex items-center gap-1.5 transition-colors text-[11px] font-medium"
+            >
+              <i data-lucide="video" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+              Book Live Video Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. MAIN HEADER -->
+      <div class="border-b border-[#E7E2DA] bg-white">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
+          
+          <!-- Mobile Menu Trigger & Search -->
+          <div class="flex items-center gap-1.5 sm:gap-3 lg:hidden">
+            <button
+              type="button"
+              onclick="document.getElementById('mobile-nav-drawer').classList.toggle('hidden')"
+              class="p-1.5 text-[#1C1917] hover:text-[#8B1D2C] focus:outline-none"
+              aria-label="Open Mobile Menu"
+            >
+              <i data-lucide="menu" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+            </button>
+            <button
+              type="button"
+              onclick="window.app.openModal('search')"
+              class="p-1.5 text-[#1C1917] hover:text-[#8B1D2C] focus:outline-none"
+              aria-label="Search Collection"
+            >
+              <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+            </button>
+          </div>
+
+          <!-- Desktop Left: Video & WhatsApp Support -->
+          <div class="hidden lg:flex items-center gap-4 text-xs text-[#57534E]">
+            <button
+              type="button"
+              onclick="window.app.openModal('videoShopping')"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#8B1D2C]/20 bg-[#FAF8F5] text-[#8B1D2C] hover:bg-[#8B1D2C] hover:text-white transition-all font-medium"
+            >
+              <i data-lucide="video" class="w-3.5 h-3.5"></i>
+              <span>Video Shopping</span>
+            </button>
+
+            <a
+              href="https://wa.me/919811054321?text=Hello%20BANANI%2C%20I%20would%20like%20assistance%20with%20an%20outfit."
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center gap-1.5 hover:text-[#8B1D2C] transition-colors"
+            >
+              <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+              <span>WhatsApp Stylist</span>
+            </a>
+          </div>
+
+          <!-- Brand Logo: Uses uploaded BANANI Logo -->
+          <div class="flex-1 lg:flex-initial flex justify-center py-1">
+            <button
+              type="button"
+              onclick="window.app.filterByCategory('All'); window.scrollTo({ top: 0, behavior: 'smooth' })"
+              class="inline-flex items-center justify-center select-none focus:outline-none group"
+            >
+              <img
+                src="assets/logo.png"
+                alt="BANANI"
+                class="h-14 sm:h-20 md:h-24 w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform drop-shadow-xs"
+              />
+            </button>
+          </div>
+
+          <!-- Right Action Icons & Currency Switcher -->
+          <div class="flex items-center gap-2 sm:gap-4 text-[#1C1917]">
+            <!-- Currency Dropdown -->
+            <div class="relative group hidden sm:block">
+              <button
+                type="button"
+                class="flex items-center gap-1 text-xs font-medium text-[#57534E] hover:text-[#8B1D2C] px-2.5 py-1 rounded border border-[#E7E2DA] bg-[#FAF8F5]"
+              >
+                <i data-lucide="globe" class="w-3.5 h-3.5 text-[#8B1D2C]"></i>
+                <span id="current-currency-label">INR</span>
+                <i data-lucide="chevron-down" class="w-3 h-3"></i>
+              </button>
+              <div
+                id="currency-options"
+                class="absolute right-0 mt-1 w-32 bg-white border border-[#E7E2DA] rounded-lg shadow-lg py-1 hidden group-hover:block z-50"
+              ></div>
+            </div>
+
+            <!-- Search Bar Trigger (Desktop) -->
+            <button
+              type="button"
+              onclick="window.app.openModal('search')"
+              class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FAF8F5] border border-[#E7E2DA] text-xs text-[#78716C] hover:border-[#8B1D2C]/40 transition-colors w-44"
+            >
+              <i data-lucide="search" class="w-3.5 h-3.5 text-[#8B1D2C]"></i>
+              <span>Search lehenga, saree...</span>
+            </button>
+
+            <!-- Wishlist -->
+            <button
+              type="button"
+              onclick="window.app.openModal('wishlist')"
+              class="p-1 sm:p-1.5 hover:text-[#8B1D2C] transition-colors relative"
+              title="Saved Wishlist"
+              aria-label="Wishlist"
+            >
+              <i data-lucide="heart" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+              <span
+                id="nav-wishlist-count"
+                class="hidden absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-[#8B1D2C] text-white text-[9px] sm:text-[10px] flex items-center justify-center font-bold"
+              >0</span>
+            </button>
+
+            <!-- Account / Track Orders -->
+            <button
+              type="button"
+              onclick="window.app.openModal('account')"
+              class="p-1 sm:p-1.5 hover:text-[#8B1D2C] transition-colors hidden sm:block"
+              title="Guest Portal & Order Tracking"
+              aria-label="Account & Orders"
+            >
+              <i data-lucide="user" class="w-5 h-5"></i>
+            </button>
+
+            <!-- Shopping Bag Trigger -->
+            <button
+              type="button"
+              onclick="window.app.openModal('bag')"
+              class="p-1 sm:p-1.5 hover:text-[#8B1D2C] transition-colors relative flex items-center gap-1.5 text-xs font-semibold text-[#8B1D2C]"
+              aria-label="Shopping Bag"
+            >
+              <div class="relative">
+                <i data-lucide="shopping-bag" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                <span
+                  id="nav-cart-count"
+                  class="hidden absolute -top-1 -right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-[#8B1D2C] text-white text-[9px] sm:text-[10px] flex items-center justify-center font-bold"
+                >0</span>
+              </div>
+              <span class="hidden md:inline text-xs font-bold tracking-wider">BAG</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. DESKTOP CATEGORY NAVIGATION -->
+      <nav class="hidden lg:block bg-[#FAF8F5] border-b border-[#E7E2DA]">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-center space-x-7 text-[12.5px] font-medium tracking-wide">
+          <button type="button" onclick="window.app.filterByCategory('All')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            NEW ARRIVALS
+          </button>
+          <button type="button" onclick="window.app.filterByCategory('Sarees')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            BANARASI SAREES
+          </button>
+          <button type="button" onclick="window.app.filterByCategory('Lehengas')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            BRIDAL LEHENGAS
+          </button>
+          <button type="button" onclick="window.app.filterByCategory('Suits & Shararas')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            SHARARAS & SUITS
+          </button>
+          <button type="button" onclick="window.app.filterByCategory('Anarkalis')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            ANARKALIS
+          </button>
+          <button type="button" onclick="window.app.filterByCategory('Gowns & Indo-Western')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            GOWNS & INDO-WESTERN
+          </button>
+          <button type="button" onclick="window.app.filterByCategory('Men\'s Wear')" class="py-2.5 text-[#44403C] hover:text-[#8B1D2C] transition-colors">
+            MEN'S COUTURE
+          </button>
+          <button type="button" onclick="window.app.filterByOccasion('Bridal')" class="py-2.5 text-[#8B1D2C] font-semibold flex items-center gap-1">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+            BRIDAL EDIT
+          </button>
+          <button type="button" onclick="window.app.filters.readyToShipOnly=true; window.app.render(); document.getElementById('catalog-section').scrollIntoView({behavior:'smooth'});" class="py-2.5 text-[#C5A059] font-bold flex items-center gap-1">
+            <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+            READY TO SHIP
+          </button>
+        </div>
+      </nav>
+
+      <!-- 4. MOBILE NAVIGATION DRAWER -->
+      <div id="mobile-nav-drawer" class="hidden lg:hidden fixed inset-0 top-[76px] sm:top-[86px] z-50 bg-black/50 backdrop-blur-xs">
+        <div class="w-4/5 max-w-xs sm:max-w-sm bg-white h-full overflow-y-auto p-5 shadow-2xl flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-[#E7E2DA]">
+              <img src="assets/logo.png" alt="BANANI" class="h-12 sm:h-14 w-auto object-contain mix-blend-multiply" />
+              <button type="button" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden')" class="p-1 text-[#57534E]">
+                <i data-lucide="x" class="w-5 h-5"></i>
+              </button>
+            </div>
+
+            <!-- Currency picker on mobile -->
+            <div class="flex items-center justify-between p-2 rounded-lg bg-[#FAF8F5] border border-[#E7E2DA] text-xs">
+              <span class="font-medium text-[#57534E]">Currency:</span>
+              <div class="flex gap-1.5">
+                <button onclick="window.app.setCurrency('INR')" class="px-2 py-0.5 rounded font-bold text-[#8B1D2C] bg-white border shadow-2xs">INR</button>
+                <button onclick="window.app.setCurrency('USD')" class="px-2 py-0.5 rounded font-bold text-[#57534E]">USD</button>
+                <button onclick="window.app.setCurrency('GBP')" class="px-2 py-0.5 rounded font-bold text-[#57534E]">GBP</button>
+                <button onclick="window.app.setCurrency('AED')" class="px-2 py-0.5 rounded font-bold text-[#57534E]">AED</button>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.openModal('videoShopping')"
+              class="w-full py-2.5 px-3 rounded-lg bg-[#8B1D2C] text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-xs"
+            >
+              <i data-lucide="video" class="w-4 h-4 text-[#C5A059]"></i>
+              <span>Book 1-on-1 Video Shopping</span>
+            </button>
+
+            <div class="flex flex-col space-y-1 text-sm text-[#1C1917]">
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('All')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium">New Arrivals</button>
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('Sarees')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium text-[#8B1D2C]">Banarasi Silk Sarees</button>
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('Lehengas')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium text-[#8B1D2C]">Bridal & Sangeet Lehengas</button>
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('Suits & Shararas')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium">Shararas & Ghararas</button>
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('Anarkalis')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium">Flared Anarkalis</button>
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('Gowns & Indo-Western')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium">Draped Gowns & Co-ords</button>
+              <button onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden'); window.app.filterByCategory('Men\'s Wear')" class="text-left py-2 px-2 hover:bg-[#FAF8F5] rounded font-medium">Men's Groom Couture</button>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-[#E7E2DA] space-y-2 text-xs text-[#78716C]">
+            <a href="https://wa.me/919811054321" target="_blank" class="flex items-center gap-2 text-[#8B1D2C] font-medium">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+              <span>WhatsApp Atelier: +91 98110 54321</span>
+            </a>
+            <p>Flagships: Chandni Chowk & South Delhi</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 5. HERO CAROUSEL SECTION (FULL DEVICE WIDTH - GRAND LUXURY SIZE) -->
+    <section id="hero-carousel-section" class="relative w-full bg-[#FAF8F5] border-b border-[#E7E2DA] overflow-hidden select-none">
+      <div class="relative w-full aspect-[16/9] sm:h-[540px] md:h-[620px] lg:h-[720px] xl:h-[780px] max-h-[820px] bg-[#1C1917] overflow-hidden">
+        
+        <!-- Slide 1: assets/1.png -->
+        <div onclick="window.app.filterByCategory('Lehengas')" class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 cursor-pointer">
+          <img src="assets/1.png" alt="BANANI Royal Bridal Lehengas" class="w-full h-full object-cover object-top" />
+        </div>
+
+        <!-- Slide 2: assets/2.png -->
+        <div onclick="window.app.filterByCategory('Men\'s Wear')" class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 pointer-events-none cursor-pointer">
+          <img src="assets/2.png" alt="BANANI Tradition Redefined Mens Wear" class="w-full h-full object-cover object-top" />
+        </div>
+
+        <!-- Slide 3: assets/3.png -->
+        <div onclick="window.app.filterByCategory('Sarees')" class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 pointer-events-none cursor-pointer">
+          <img src="assets/3.png" alt="BANANI Grace In Every Drape Sarees" class="w-full h-full object-cover object-top" />
+        </div>
+
+        <!-- Slide 4: assets/4.png -->
+        <div onclick="window.app.filterByCategory('Men\'s Wear')" class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 pointer-events-none cursor-pointer">
+          <img src="assets/4.png" alt="BANANI Regal Splendor Royal Sherwanis" class="w-full h-full object-cover object-top" />
+        </div>
+
+        <!-- Carousel Arrows (Desktop) -->
+        <button type="button" onclick="event.stopPropagation(); window.heroPrev();" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/35 hover:bg-black/65 text-white backdrop-blur-xs flex items-center justify-center transition-all border border-white/20 shadow-md hidden sm:flex" aria-label="Previous Slide">
+          <i data-lucide="chevron-left" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        </button>
+        <button type="button" onclick="event.stopPropagation(); window.heroNext();" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/35 hover:bg-black/65 text-white backdrop-blur-xs flex items-center justify-center transition-all border border-white/20 shadow-md hidden sm:flex" aria-label="Next Slide">
+          <i data-lucide="chevron-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+        </button>
+
+        <!-- 4 Slide Indicators (Pill Container) -->
+        <div class="absolute bottom-2.5 sm:bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 rounded-full bg-black/35 backdrop-blur-xs border border-white/15">
+          <button onclick="event.stopPropagation(); window.heroGoTo(0);" class="hero-dot h-1 sm:h-1.5 w-6 sm:w-8 rounded-full bg-[#C5A059] transition-all" aria-label="Go to slide 1"></button>
+          <button onclick="event.stopPropagation(); window.heroGoTo(1);" class="hero-dot h-1 sm:h-1.5 w-1.5 sm:w-2 rounded-full bg-white/50 hover:bg-white/80 transition-all" aria-label="Go to slide 2"></button>
+          <button onclick="event.stopPropagation(); window.heroGoTo(2);" class="hero-dot h-1 sm:h-1.5 w-1.5 sm:w-2 rounded-full bg-white/50 hover:bg-white/80 transition-all" aria-label="Go to slide 3"></button>
+          <button onclick="event.stopPropagation(); window.heroGoTo(3);" class="hero-dot h-1 sm:h-1.5 w-1.5 sm:w-2 rounded-full bg-white/50 hover:bg-white/80 transition-all" aria-label="Go to slide 4"></button>
+        </div>
+      </div>
+
+      <!-- Trust Bar (Mobile-Optimized Grid) -->
+      <div class="bg-[#FAF8F5] py-3.5 sm:py-4 border-t border-[#E7E2DA]">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 text-[#44403C]">
+          <div class="flex items-center gap-2 sm:gap-2.5 p-1.5">
+            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#8B1D2C]/10 text-[#8B1D2C] flex items-center justify-center shrink-0">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-[11px] sm:text-xs font-bold text-[#1C1917]">100% Authentic Handloom</h4>
+              <p class="text-[9px] sm:text-[11px] text-[#78716C]">Silk Mark & Craft Certified</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 sm:gap-2.5 p-1.5">
+            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#8B1D2C]/10 text-[#8B1D2C] flex items-center justify-center shrink-0">
+              <i data-lucide="scissors" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-[11px] sm:text-xs font-bold text-[#1C1917]">Custom Blouse Stitching</h4>
+              <p class="text-[9px] sm:text-[11px] text-[#78716C]">Made-to-measure tailoring</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 sm:gap-2.5 p-1.5">
+            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#8B1D2C]/10 text-[#8B1D2C] flex items-center justify-center shrink-0">
+              <i data-lucide="truck" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-[11px] sm:text-xs font-bold text-[#1C1917]">Worldwide Express Delivery</h4>
+              <p class="text-[9px] sm:text-[11px] text-[#78716C]">Insured shipping in 5-7 days</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 sm:gap-2.5 p-1.5">
+            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#8B1D2C]/10 text-[#8B1D2C] flex items-center justify-center shrink-0">
+              <i data-lucide="video" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-[11px] sm:text-xs font-bold text-[#1C1917]">Live Video Shopping</h4>
+              <p class="text-[9px] sm:text-[11px] text-[#78716C]">Virtual 1-on-1 consultation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SHOP BY CATEGORY WITH DISPLAY VIDEOS -->
+    <section class="py-10 sm:py-16 bg-[#FAF8F5] border-b border-[#E7E2DA]">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-6 sm:mb-10">
+          <div class="space-y-1.5 sm:space-y-2">
+            <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#8B1D2C] font-semibold flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+              TIMELESS INDIAN ETHNIC SILHOUETTES
+            </span>
+            <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#1C1917]">
+              Shop By Category
+            </h2>
+            <p class="text-xs sm:text-sm text-[#57534E] max-w-xl font-light">
+              Watch real couture movement, pure silk pallu drapes, and 16-kali twirls in our high-definition display videos.
+            </p>
+          </div>
+
+          <!-- Video Audio & Mode Toggles -->
+          <div class="flex items-center gap-2 self-start md:self-auto">
+            <button
+              type="button"
+              onclick="window.app.toggleGlobalAudio()"
+              class="px-3 py-1.5 rounded-full bg-white border border-[#E7E2DA] hover:border-[#8B1D2C] text-[#57534E] hover:text-[#8B1D2C] text-xs font-medium flex items-center gap-1.5 transition-colors shadow-2xs"
+            >
+              <i data-lucide="volume-x" class="w-3.5 h-3.5 text-[#8B1D2C]"></i>
+              <span id="audio-toggle-label">Audio Off</span>
+            </button>
+
+            <div class="flex items-center bg-white p-1 rounded-full border border-[#E7E2DA] shadow-2xs">
+              <button
+                type="button"
+                onclick="window.app.setStoryViewMode('videos')"
+                class="px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 bg-[#8B1D2C] text-white shadow-xs"
+              >
+                <i data-lucide="film" class="w-3 h-3"></i>
+                <span>Videos</span>
+              </button>
+              <button
+                type="button"
+                onclick="window.app.setStoryViewMode('compact')"
+                class="px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 text-[#57534E] hover:text-[#1C1917]"
+              >
+                <i data-lucide="grid" class="w-3 h-3"></i>
+                <span>Circles</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Category Stories Container (Videos / Circles) -->
+        <div id="category-stories-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-4 lg:gap-5"></div>
+
+      </div>
+    </section>
+
+    <!-- 7. CURATED BY OCCASION -->
+    <section class="py-12 sm:py-18 bg-white border-b border-[#E7E2DA]">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+          <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#8B1D2C] font-semibold flex items-center justify-center gap-1.5 mb-1.5">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+            CELEBRATE EVERY MOMENT
+          </span>
+          <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#1C1917]">
+            Curated By Occasion
+          </h2>
+          <div class="w-16 h-0.5 bg-[#8B1D2C] mx-auto mt-2.5"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div onclick="window.app.filterByOccasion('Bridal')" class="group relative h-80 sm:h-96 rounded-xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-500 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85" alt="Bridal & Wedding" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4 sm:p-5 text-white space-y-1">
+              <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-[#C5A059]">SPECIAL EDIT</span>
+              <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold">Bridal & Wedding</h3>
+              <p class="text-xs text-white/80 font-light">Regal lehengas & Katan silks for the bride</p>
+            </div>
+          </div>
+
+          <div onclick="window.app.filterByOccasion('Sangeet & Cocktail')" class="group relative h-80 sm:h-96 rounded-xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-500 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=85" alt="Sangeet & Cocktail" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4 sm:p-5 text-white space-y-1">
+              <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-[#C5A059]">SPECIAL EDIT</span>
+              <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold">Sangeet & Cocktail</h3>
+              <p class="text-xs text-white/80 font-light">Mirror work, velvet shararas & pre-draped gowns</p>
+            </div>
+          </div>
+
+          <div onclick="window.app.filterByOccasion('Haldi & Mehendi')" class="group relative h-80 sm:h-96 rounded-xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-500 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=85" alt="Haldi & Mehendi" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4 sm:p-5 text-white space-y-1">
+              <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-[#C5A059]">SPECIAL EDIT</span>
+              <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold">Haldi & Mehendi</h3>
+              <p class="text-xs text-white/80 font-light">Mustard yellows, chinon anarkalis & gotapatti</p>
+            </div>
+          </div>
+
+          <div onclick="window.app.filterByOccasion('Festive & Pooja')" class="group relative h-80 sm:h-96 rounded-xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-500 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=85" alt="Festive & Pooja" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4 sm:p-5 text-white space-y-1">
+              <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-[#C5A059]">SPECIAL EDIT</span>
+              <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold">Festive & Pooja</h3>
+              <p class="text-xs text-white/80 font-light">Timeless Banarasi silks & Chanderi suits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. MAIN PRODUCT CATALOG -->
+    <section id="catalog-section" class="py-10 sm:py-16 bg-[#FAF8F5]">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-10">
+          <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#8B1D2C] font-semibold flex items-center justify-center gap-1.5 mb-1.5">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+            BANANI HAUTE COUTURE CURATIONS
+          </span>
+          <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#1C1917]">
+            Featured Handcrafted Collections
+          </h2>
+          <div class="w-16 h-0.5 bg-[#8B1D2C] mx-auto mt-2.5"></div>
+        </div>
+
+        <!-- Filter Quick Tabs (Horizontal Mobile Scroll) -->
+        <div class="flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 overflow-x-auto pb-3 scrollbar-none mb-4 sm:mb-6">
+          <button onclick="window.app.filterByCategory('All')" class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-[#8B1D2C] text-white shadow-md">
+            All Creations
+          </button>
+          <button onclick="window.app.filterByCategory('Lehengas')" class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-white text-[#57534E] hover:bg-[#E7E2DA] border border-[#E7E2DA]">
+            Bridal Lehengas
+          </button>
+          <button onclick="window.app.filterByCategory('Sarees')" class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-white text-[#57534E] hover:bg-[#E7E2DA] border border-[#E7E2DA]">
+            Banarasi Sarees
+          </button>
+          <button onclick="window.app.filterByCategory('Suits & Shararas')" class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-white text-[#57534E] hover:bg-[#E7E2DA] border border-[#E7E2DA]">
+            Shararas & Suits
+          </button>
+          <button onclick="window.app.filterByCategory('Anarkalis')" class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-white text-[#57534E] hover:bg-[#E7E2DA] border border-[#E7E2DA]">
+            Flared Anarkalis
+          </button>
+          <button onclick="window.app.filterByCategory('Men\'s Wear')" class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-white text-[#57534E] hover:bg-[#E7E2DA] border border-[#E7E2DA]">
+            Men's Couture
+          </button>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="bg-white p-2.5 sm:p-4 rounded-xl border border-[#E7E2DA] mb-6 sm:mb-8 flex items-center justify-between gap-3 shadow-xs">
+          <div id="product-count-label" class="text-xs text-[#57534E]">
+            Showing <span class="font-bold text-[#1C1917]">10</span> Masterpieces
+          </div>
+          <div class="flex items-center gap-2">
+            <select
+              onchange="window.app.filters.sortBy = this.value; window.app.render();"
+              class="text-xs font-medium border border-[#E7E2DA] rounded-lg px-2.5 py-1 sm:px-3 sm:py-1.5 bg-[#FAF8F5] text-[#1C1917] focus:outline-none"
+            >
+              <option value="featured">Featured Curations</option>
+              <option value="newest">New Arrivals</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid Container -->
+        <div id="products-grid-container" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6"></div>
+
+      </div>
+    </section>
+
+    <!-- 9. LIVE VIDEO SHOPPING ATELIER BANNER -->
+    <section class="py-12 sm:py-20 bg-[#FAF8F5] border-b border-[#E7E2DA]">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="rounded-2xl bg-[#8B1D2C] text-white overflow-hidden shadow-xl border border-[#66131F] grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-7 relative min-h-[300px] sm:min-h-[420px] lg:min-h-[480px]">
+            <img src="assets/1.png" alt="BANANI Virtual Video Shopping Consultation" class="w-full h-full object-cover" />
+            <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-xs border border-white/20 flex items-center gap-2 text-xs">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span class="font-semibold tracking-wide">LIVE STYLISTS ACTIVE</span>
+            </div>
+          </div>
+          <div class="lg:col-span-5 p-6 sm:p-12 flex flex-col justify-center space-y-4 sm:space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#C5A059] text-xs font-semibold tracking-widest uppercase w-fit">
+              <i data-lucide="video" class="w-3.5 h-3.5"></i>
+              <span>VIRTUAL ATELIER</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl sm:text-4xl font-bold leading-tight">
+              Can’t Visit Our Delhi Stores? Shop Live on Video.
+            </h3>
+            <p class="text-xs sm:text-sm text-white/80 font-light leading-relaxed">
+              Connect with our master stylists on WhatsApp or Zoom for a personalized virtual tour. Inspect delicate embroidery, compare bridal color palettes, and receive precise made-to-measure guidance.
+            </p>
+            <button
+              type="button"
+              onclick="window.app.openModal('videoShopping')"
+              class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-[#C5A059] hover:bg-[#A07F3B] text-[#1C1917] font-bold text-xs uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-2"
+            >
+              <i data-lucide="video" class="w-4 h-4"></i>
+              <span>SCHEDULE LIVE VIDEO APPOINTMENT</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. REAL BRIDES & VIP PRIVILEGE CLUB -->
+    <section class="py-12 sm:py-20 bg-white border-b border-[#E7E2DA]">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+        <div>
+          <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+            <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#8B1D2C] font-semibold flex items-center justify-center gap-1.5 mb-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C5A059]"></i>
+              LOVE FROM OUR BRIDES
+            </span>
+            <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#1C1917]">
+              Real Brides of BANANI
+            </h2>
+            <div class="w-16 h-0.5 bg-[#8B1D2C] mx-auto mt-2.5"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div class="bg-[#FAF8F5] rounded-xl border border-[#E7E2DA] p-4 sm:p-5 space-y-3">
+              <div class="flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400&q=85" alt="Pooja Agarwal" class="w-12 h-12 rounded-full object-cover border-2 border-[#8B1D2C]" />
+                <div>
+                  <h4 class="font-serif-luxury text-sm font-bold text-[#1C1917]">Pooja Agarwal</h4>
+                  <p class="text-[10px] text-[#8B1D2C]">New Delhi</p>
+                </div>
+              </div>
+              <p class="text-xs text-[#57534E] italic leading-relaxed">
+                "The zardozi work felt so majestic and regal. Custom blouse fitting was 10/10 without even visiting the store in person!"
+              </p>
+            </div>
+
+            <div class="bg-[#FAF8F5] rounded-xl border border-[#E7E2DA] p-4 sm:p-5 space-y-3">
+              <div class="flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=400&q=85" alt="Simran Kaur" class="w-12 h-12 rounded-full object-cover border-2 border-[#8B1D2C]" />
+                <div>
+                  <h4 class="font-serif-luxury text-sm font-bold text-[#1C1917]">Simran Kaur</h4>
+                  <p class="text-[10px] text-[#8B1D2C]">London, UK</p>
+                </div>
+              </div>
+              <p class="text-xs text-[#57534E] italic leading-relaxed">
+                "We ordered our entire wedding trousseau from the UK. The video shopping session made us so confident in our choice."
+              </p>
+            </div>
+
+            <div class="bg-[#FAF8F5] rounded-xl border border-[#E7E2DA] p-4 sm:p-5 space-y-3">
+              <div class="flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=400&q=85" alt="Dr. Tanya Verma" class="w-12 h-12 rounded-full object-cover border-2 border-[#8B1D2C]" />
+                <div>
+                  <h4 class="font-serif-luxury text-sm font-bold text-[#1C1917]">Dr. Tanya Verma</h4>
+                  <p class="text-[10px] text-[#8B1D2C]">San Jose, California</p>
+                </div>
+              </div>
+              <p class="text-xs text-[#57534E] italic leading-relaxed">
+                "The twirl on the dance floor was everything I dreamed of. Arrived in California within 6 days via express shipping."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIP Club Form -->
+        <div class="bg-[#FAF8F5] rounded-2xl p-6 sm:p-12 border border-[#E7E2DA] max-w-4xl mx-auto text-center space-y-3 sm:space-y-4">
+          <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#8B1D2C] font-semibold">
+            BANANI PRIVILEGE CLUB
+          </span>
+          <h3 class="font-serif-luxury text-xl sm:text-3xl font-bold text-[#1C1917]">
+            Get ₹1,000 Off Your First Handcrafted Outfit
+          </h3>
+          <form id="vip-newsletter-form" class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto pt-2">
+            <input type="email" required placeholder="Enter your email address" class="flex-1 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-lg border border-[#E7E2DA] text-xs bg-white focus:outline-none focus:border-[#8B1D2C]" />
+            <button type="submit" class="px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-[#8B1D2C] hover:bg-[#66131F] text-white text-xs uppercase tracking-wider font-semibold shadow-xs">
+              CLAIM ₹1,000 OFF
+            </button>
+          </form>
+          <div id="vip-success-box" class="hidden p-3 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-semibold max-w-md mx-auto">
+            Coupon Code BANANI10 Activated!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. LUXURY FOOTER -->
+    <footer class="bg-[#1C1917] text-white border-t border-[#302B27] mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div class="space-y-3">
+          <div class="inline-flex items-center bg-white/95 px-4 py-2.5 rounded-xl w-fit shadow-xs">
+            <img src="assets/logo.png" alt="BANANI" class="h-11 sm:h-14 w-auto object-contain" />
+          </div>
+          <p class="text-xs text-white/70 leading-relaxed font-light">
+            Delhi’s premier destination for handcrafted Banarasi silks, royal bridal lehengas, and heritage ethnic couture since 1968.
+          </p>
+        </div>
+        <div class="space-y-2 text-xs text-white/70">
+          <h4 class="font-serif-luxury font-bold text-sm text-[#C5A059] uppercase tracking-wider">Store Ateliers</h4>
+          <p>• Plot 1428, Nai Sarak, Chandni Chowk, Delhi 110006</p>
+          <p>• M-Block Market, Greater Kailash 1, New Delhi 110048</p>
+          <p>• WhatsApp Stylist: +91 98110 54321</p>
+        </div>
+        <div class="space-y-2 text-xs text-white/70">
+          <h4 class="font-serif-luxury font-bold text-sm text-[#C5A059] uppercase tracking-wider">Client Services</h4>
+          <p onclick="window.app.openModal('videoShopping')" class="cursor-pointer hover:text-white">Live Video Shopping</p>
+          <p onclick="window.app.openModal('sizeGuide')" class="cursor-pointer hover:text-white">Custom Fitting & Size Guide</p>
+          <p onclick="window.app.openModal('account')" class="cursor-pointer hover:text-white">Track Your Order</p>
+        </div>
+        <div class="space-y-2 text-xs text-white/70">
+          <h4 class="font-serif-luxury font-bold text-sm text-[#C5A059] uppercase tracking-wider">Worldwide Shipping</h4>
+          <p>Express doorstep delivery with BlueDart & DHL to USA, UK, Canada, UAE, Australia & India.</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 py-4 text-center text-[11px] text-white/50">
+        © 2026 BANANI Couture Pvt. Ltd. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- 12. FLOATING ACTION BUTTONS -->
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 sm:gap-3">
+      <button
+        type="button"
+        onclick="window.app.openModal('videoShopping')"
+        class="px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-[#8B1D2C] hover:bg-[#66131F] text-white shadow-xl border border-[#C5A059]/40 flex items-center gap-2 text-xs font-semibold tracking-wide transition-all transform hover:scale-105"
+        aria-label="Book Live Video Consultation"
+      >
+        <i data-lucide="video" class="w-4 h-4 text-[#C5A059]"></i>
+        <span class="hidden sm:inline">Book Video Shopping</span>
+      </button>
+
+      <a
+        href="https://wa.me/919811054321?text=Hello%20BANANI%2C%20I%20would%20like%20to%20inquire%20about%20your%20ethnic%20wear%20collection."
+        target="_blank"
+        rel="noreferrer"
+        class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110"
+        aria-label="Chat with WhatsApp Stylist"
+      >
+        <i data-lucide="message-circle" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+      </a>
+    </div>
+
+    <!-- 13. MODALS & DRAWERS -->
+
+    <!-- Shopping Bag Slide-Over -->
+    <div id="cart-drawer-modal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex justify-end hidden">
+      <div class="w-full sm:max-w-md bg-white h-full shadow-2xl flex flex-col justify-between overflow-hidden">
+        <div class="p-4 sm:p-5 border-b border-[#E7E2DA] flex items-center justify-between bg-[#FAF8F5]">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-[#8B1D2C]"></i>
+            <h3 class="font-serif-luxury text-lg sm:text-xl font-bold text-[#1C1917]">Your Shopping Bag</h3>
+          </div>
+          <button onclick="window.app.closeModal('bag')" class="p-1 text-[#78716C] hover:text-[#1C1917]">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="bg-[#8B1D2C]/10 px-4 sm:px-5 py-2.5 sm:py-3 border-b border-[#E7E2DA] text-xs">
+          <p id="free-shipping-text" class="text-[#8B1D2C] font-medium text-[11px] sm:text-xs"></p>
+          <div class="w-full bg-[#E7E2DA] h-1.5 rounded-full overflow-hidden mt-1.5">
+            <div id="free-shipping-progress" class="bg-[#8B1D2C] h-full transition-all duration-500" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div id="cart-items-container" class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3 sm:space-y-4"></div>
+
+        <div class="p-4 sm:p-5 border-t border-[#E7E2DA] bg-[#FAF8F5] space-y-3">
+          <form onsubmit="event.preventDefault(); window.app.applyCoupon(document.getElementById('coupon-input').value);" class="flex gap-2">
+            <input id="coupon-input" type="text" placeholder="Promo Code (BANANI10)" class="flex-1 px-3 py-2 rounded-lg border border-[#E7E2DA] text-xs uppercase font-mono bg-white" />
+            <button type="submit" class="px-4 py-2 rounded-lg bg-[#1C1917] text-white text-xs font-semibold">Apply</button>
+          </form>
+
+          <div class="space-y-1.5 text-xs text-[#57534E]">
+            <div class="flex justify-between"><span>Subtotal</span><span id="cart-subtotal-val" class="font-bold text-[#1C1917]">₹0</span></div>
+            <div id="cart-discount-row" class="flex justify-between text-emerald-700 font-medium hidden"><span>Discount</span><span id="cart-discount-val">- ₹0</span></div>
+            <div class="flex justify-between text-sm font-bold text-[#1C1917] pt-2 border-t border-[#E7E2DA]">
+              <span>Total Amount</span>
+              <span id="cart-total-val" class="text-base text-[#8B1D2C] font-serif-luxury font-bold">₹0</span>
+            </div>
+          </div>
+
+          <button onclick="window.app.closeModal('bag'); window.app.openModal('checkout'); window.proceedCheckout(1);" class="w-full py-3.5 rounded-lg bg-[#8B1D2C] hover:bg-[#66131F] text-white text-xs uppercase tracking-wider font-semibold shadow-md flex items-center justify-center gap-2">
+            <span>PROCEED TO SECURE CHECKOUT</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wishlist Drawer -->
+    <div id="wishlist-drawer-modal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex justify-end hidden">
+      <div class="w-full sm:max-w-md bg-white h-full shadow-2xl flex flex-col justify-between overflow-hidden">
+        <div class="p-4 sm:p-5 border-b border-[#E7E2DA] flex items-center justify-between bg-[#FAF8F5]">
+          <div class="flex items-center gap-2">
+            <i data-lucide="heart" class="w-5 h-5 text-[#8B1D2C] fill-current"></i>
+            <h3 class="font-serif-luxury text-lg sm:text-xl font-bold text-[#1C1917]">Saved Wishlist</h3>
+          </div>
+          <button onclick="window.app.closeModal('wishlist')" class="p-1 text-[#78716C] hover:text-[#1C1917]">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div id="wishlist-items-container" class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4"></div>
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-detail-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-2.5 sm:p-6 overflow-y-auto hidden">
+      <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-[#E7E2DA] relative">
+        <button onclick="window.app.closeModal('productDetail')" class="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/90 text-[#1C1917] hover:bg-[#8B1D2C] hover:text-white flex items-center justify-center shadow-md">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+        <div id="product-detail-body"></div>
+      </div>
+    </div>
+
+    <!-- Story Reel Modal -->
+    <div id="story-reel-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-2 sm:p-4 hidden">
+      <div id="story-reel-body"></div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center bg-black/50 backdrop-blur-xs p-3 sm:p-6 lg:p-12 hidden">
+      <div class="relative w-full max-w-3xl bg-white border border-[#E7E2DA] rounded-2xl shadow-2xl overflow-hidden mt-4 sm:mt-6 flex flex-col max-h-[85vh]">
+        <div class="p-3.5 sm:p-5 border-b border-[#E7E2DA] bg-[#FAF8F5] flex items-center gap-2.5 sm:gap-3">
+          <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5 text-[#8B1D2C] shrink-0"></i>
+          <input id="modal-search-input" type="text" placeholder="Search by lehenga, Banarasi saree, sharara..." class="flex-1 bg-transparent text-[#1C1917] text-xs sm:text-base focus:outline-none" />
+          <button onclick="window.app.closeModal('search')" class="p-1 text-[#78716C]"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div class="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4">
+          <div id="popular-searches-box">
+            <span class="text-xs uppercase tracking-widest text-[#8B1D2C] font-semibold block mb-2 sm:mb-3">Popular Searches</span>
+            <div class="flex flex-wrap gap-1.5 sm:gap-2">
+              <button onclick="document.getElementById('modal-search-input').value='Bridal Lehenga'; document.getElementById('modal-search-input').dispatchEvent(new Event('input'))" class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#FAF8F5] border border-[#E7E2DA] text-xs">Bridal Lehenga</button>
+              <button onclick="document.getElementById('modal-search-input').value='Banarasi'; document.getElementById('modal-search-input').dispatchEvent(new Event('input'))" class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#FAF8F5] border border-[#E7E2DA] text-xs">Banarasi Silk Saree</button>
+              <button onclick="document.getElementById('modal-search-input').value='Sharara'; document.getElementById('modal-search-input').dispatchEvent(new Event('input'))" class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#FAF8F5] border border-[#E7E2DA] text-xs">Velvet Sharara</button>
+            </div>
+          </div>
+          <div id="search-results-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1-on-1 Video Shopping Modal -->
+    <div id="video-shopping-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 hidden">
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-[#E7E2DA] flex flex-col">
+        <div class="bg-[#8B1D2C] p-5 sm:p-6 text-white flex items-start justify-between">
+          <div>
+            <span class="text-[10px] sm:text-xs uppercase tracking-widest text-[#C5A059] font-semibold flex items-center gap-1.5">
+              <i data-lucide="video" class="w-4 h-4"></i> LIVE ATELIER CONSULTATION
+            </span>
+            <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold mt-1">1-on-1 Live Video Shopping</h3>
+          </div>
+          <button onclick="window.app.closeModal('videoShopping')" class="text-white/70 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div class="p-5 sm:p-8">
+          <div id="video-form-success" class="hidden py-8 text-center space-y-3">
+            <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+              <i data-lucide="check" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-serif-luxury text-2xl font-bold">Appointment Confirmed!</h4>
+            <p class="text-xs text-[#57534E]">Our Senior Stylist will contact you via WhatsApp with your private video room link.</p>
+          </div>
+          <form id="video-shopping-form" class="space-y-4">
+            <div id="video-form-fields" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-[#1C1917] mb-1">Full Name *</label>
+                  <input type="text" required placeholder="Ananya Sharma" class="w-full px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-[#1C1917] mb-1">WhatsApp Number *</label>
+                  <input type="tel" required placeholder="+91 98110 54321" class="w-full px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-[#1C1917] mb-1">Preferred Date *</label>
+                  <input type="date" required class="w-full px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-[#1C1917] mb-1">Time Slot (IST) *</label>
+                  <select class="w-full px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs bg-white">
+                    <option>11:00 AM - 12:00 PM IST</option>
+                    <option>03:00 PM - 04:00 PM IST</option>
+                    <option>07:00 PM - 08:00 PM IST (US/UK friendly)</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="w-full py-3.5 rounded-lg bg-[#8B1D2C] hover:bg-[#66131F] text-white text-xs uppercase tracking-wider font-semibold shadow-md">
+                CONFIRM VIDEO CONSULTATION
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Step Checkout Modal -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto hidden">
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-[#E7E2DA] flex flex-col p-5 sm:p-8">
+        <div class="flex items-center justify-between pb-4 border-b border-[#E7E2DA]">
+          <h3 class="font-serif-luxury text-lg sm:text-xl font-bold text-[#1C1917]">BANANI Couture Checkout</h3>
+          <button onclick="window.app.closeModal('checkout')" class="p-1 text-[#78716C]"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+
+        <div id="checkout-form-pane" class="py-5 sm:py-6 space-y-5">
+          <div class="checkout-step-pane space-y-3 sm:space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-[#8B1D2C]">Step 1: Shipping Address</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <input id="chk-firstname" type="text" placeholder="Full Name *" class="px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+              <input id="chk-phone" type="tel" placeholder="Phone Number *" class="px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+            </div>
+            <input id="chk-address" type="text" placeholder="Street Address *" class="w-full px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+            <div class="grid grid-cols-2 gap-3">
+              <input id="chk-city" type="text" placeholder="City *" class="px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+              <input type="text" placeholder="PIN Code *" class="px-3.5 py-2.5 rounded-lg border border-[#E7E2DA] text-xs" />
+            </div>
+            <button type="button" onclick="window.proceedCheckout(2)" class="w-full py-3 rounded-lg bg-[#8B1D2C] text-white text-xs uppercase font-semibold">
+              Continue to Payment
+            </button>
+          </div>
+
+          <div class="checkout-step-pane hidden space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-[#8B1D2C]">Step 2: Select Payment Method</h4>
+            <div class="space-y-2 text-xs">
+              <label class="p-3 rounded-xl border border-[#8B1D2C] bg-[#FAF8F5] flex items-center justify-between cursor-pointer">
+                <span class="font-bold">UPI (Google Pay, PhonePe, Paytm)</span>
+                <span class="text-emerald-700 font-bold">FASTEST</span>
+              </label>
+              <label class="p-3 rounded-xl border border-[#E7E2DA] bg-white flex items-center justify-between cursor-pointer">
+                <span>Credit / Debit Cards (Visa, Mastercard, Amex)</span>
+                <i data-lucide="credit-card" class="w-4 h-4 text-[#8B1D2C]"></i>
+              </label>
+            </div>
+            <button type="button" onclick="window.placeFinalOrder()" class="w-full py-3.5 rounded-lg bg-[#8B1D2C] hover:bg-[#66131F] text-white text-xs uppercase font-semibold shadow-md">
+              AUTHORIZE & PLACE ORDER
+            </button>
+          </div>
+        </div>
+
+        <div id="checkout-success-pane" class="hidden py-8 text-center space-y-4">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+            <i data-lucide="check" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-serif-luxury text-2xl font-bold">Thank You For Your Order!</h3>
+          <p class="text-xs text-[#57534E]">Your order <strong id="chk-order-number-val" class="text-[#8B1D2C]"></strong> has been received by BANANI master atelier.</p>
+          <button onclick="window.app.closeModal('checkout')" class="px-6 py-2.5 rounded-lg bg-[#8B1D2C] text-white text-xs uppercase font-semibold">
+            Continue Shopping
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account / Orders Modal -->
+    <div id="account-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-3 sm:p-4 hidden">
+      <div class="relative w-full max-w-2xl bg-white border border-[#E7E2DA] rounded-2xl p-5 sm:p-6 shadow-2xl max-h-[85vh] overflow-y-auto">
+        <div class="flex items-center justify-between pb-4 border-b border-[#E7E2DA]">
+          <h3 class="font-serif-luxury text-lg sm:text-xl font-bold text-[#1C1917]">My Orders & Stores</h3>
+          <button onclick="window.app.closeModal('account')" class="p-1 text-[#78716C]"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div id="account-orders-list" class="py-4 space-y-3"></div>
+      </div>
+    </div>
+
+    <!-- Size Guide Modal -->
+    <div id="size-guide-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-3 sm:p-4 hidden">
+      <div class="relative w-full max-w-xl bg-white border border-[#E7E2DA] rounded-2xl p-5 sm:p-6 shadow-2xl">
+        <div class="flex items-center justify-between pb-4 border-b border-[#E7E2DA]">
+          <h3 class="font-serif-luxury text-base sm:text-lg font-bold text-[#1C1917]">Size & Measurement Guide</h3>
+          <button onclick="window.app.closeModal('sizeGuide')" class="p-1 text-[#78716C]"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div class="py-4 text-xs space-y-2 text-[#57534E]">
+          <p>• <strong>XS (34):</strong> Bust 32-34", Waist 26-28", Lehenga Length 41"</p>
+          <p>• <strong>S (36):</strong> Bust 34-36", Waist 28-30", Lehenga Length 42"</p>
+          <p>• <strong>M (38):</strong> Bust 36-38", Waist 30-32", Lehenga Length 42"</p>
+          <p>• <strong>L (40):</strong> Bust 38-40", Waist 32-34", Lehenga Length 42.5"</p>
+          <p>• <strong>XL (42):</strong> Bust 40-42", Waist 34-36", Lehenga Length 43"</p>
+          <p class="pt-2 border-t text-[#8B1D2C] font-medium">All outfits include a 2-inch side margin for custom alterations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-4 sm:bottom-6 left-3 sm:left-6 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none"></div>
+
+    <!-- COMPLETE DATASETS AND APPLICATION LOGIC -->
+    <script>
+      // 1. DATASETS
+      const CURRENCIES = {
+        INR: { symbol: '₹', rate: 1, label: 'INR (₹)' },
+        USD: { symbol: '$', rate: 0.012, label: 'USD ($)' },
+        GBP: { symbol: '£', rate: 0.0095, label: 'GBP (£)' },
+        EUR: { symbol: '€', rate: 0.011, label: 'EUR (€)' },
+        AED: { symbol: 'AED ', rate: 0.044, label: 'AED (د.إ)' },
+        CAD: { symbol: 'CA$', rate: 0.016, label: 'CAD ($)' },
+      };
+
+      const PROMO_CODES = {
+        BANANI10: { discountPercent: 10, description: '10% Welcome Gift across all BANANI collections', minAmount: 5000 },
+        BRIDAL2026: { discountPercent: 15, description: '15% Off on Bridal & Wedding Collection orders above ₹35,000', minAmount: 35000 },
+        FESTIVE500: { discountPercent: 5, description: 'Special 5% Online Prepaid Discount', minAmount: 2000 },
+      };
+
+      const CATEGORY_STORIES = [
+        {
+          id: 'sarees',
+          name: 'Sarees',
+          category: 'Sarees',
+          image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80',
+          videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-woman-wearing-a-traditional-indian-saree-41484-large.mp4',
+          count: '150+ Designs',
+          tagline: 'Handwoven Pure Katan & Banarasi Zari Silk Drapes',
+          badge: 'Pure Silk Mark',
+        },
+        {
+          id: 'lehengas',
+          name: 'Lehengas',
+          category: 'Lehengas',
+          image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80',
+          videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-model-posing-in-a-traditional-indian-dress-41482-large.mp4',
+          count: '80+ Styles',
+          tagline: 'Couture Bridal Kalidars & 16-Kali Hand Zardozi Twirls',
+          badge: 'Bridal Bestseller',
+        },
+        {
+          id: 'shararas',
+          name: 'Sharara Sets',
+          category: 'Suits & Shararas',
+          image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80',
+          videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-woman-dressed-in-traditional-indian-clothes-41483-large.mp4',
+          count: '65+ Suits',
+          tagline: 'Velvet Flared Ghararas with Antique Gota Patti Borders',
+          badge: 'Festive Favorite',
+        },
+        {
+          id: 'anarkalis',
+          name: 'Anarkalis',
+          category: 'Anarkalis',
+          image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=600&q=80',
+          videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-close-up-of-a-woman-in-a-traditional-indian-dress-41486-large.mp4',
+          count: '45+ Flares',
+          tagline: 'Floor-Sweeping Royal Silhouette with Mirror Embellishments',
+          badge: 'Sangeet Ready',
+        },
+        {
+          id: 'gowns',
+          name: 'Draped Gowns',
+          category: 'Gowns & Indo-Western',
+          image: 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=600&q=80',
+          videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-an-elegant-gold-dress-41584-large.mp4',
+          count: '30+ Looks',
+          tagline: 'Contemporary Sculpted Drapes & Sequin Red Carpet Gowns',
+          badge: 'Cocktail Glam',
+        },
+        {
+          id: 'mens',
+          name: "Men's Wear",
+          category: "Men's Wear",
+          image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80',
+          videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-stylish-man-in-a-traditional-indian-outfit-41488-large.mp4',
+          count: '40+ Outfits',
+          tagline: 'Regal Raw Silk Sherwanis, Bandhgalas & Kurta Bundis',
+          badge: 'Groom & Heritage',
+        },
+      ];
+
+      const BANANI_PRODUCTS = [
+        {
+          id: 'banani-crimson-bridal-lehenga',
+          sku: 'BNN-LH-001',
+          name: 'Shanza Crimson Heritage Bridal Lehenga',
+          subtitle: 'Pure Raw Silk with Intricate Zardozi & Resham Weave',
+          category: 'Lehengas',
+          occasion: 'Bridal',
+          price: 48500,
+          originalPrice: 58000,
+          isNew: true,
+          isBestSeller: true,
+          isBridal: true,
+          isReadyToShip: false,
+          colors: [
+            { name: 'Royal Crimson', hex: '#8B1D2C' },
+            { name: 'Deep Maroon', hex: '#5A0F1A' },
+            { name: 'Rani Pink', hex: '#C2185B' },
+          ],
+          sizes: ['Unstitched', 'S', 'M', 'L', 'XL', 'Custom Fit'],
+          fabric: 'Pure Raw Silk & Net Dupatta',
+          images: [
+            'assets/1.png',
+            'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'A masterpiece from our BANANI Riwaaz Bridal Collection. Woven from rich raw silk in royal crimson with antique gold zardozi jaal.',
+          editorialNote: 'Styled best with traditional polki choker and classic bridal bangles.',
+          careInstructions: ['Dry Clean Only', 'Store wrapped in clean white muslin cloth'],
+          origin: 'Old Delhi & Banaras',
+          dispatchTime: 'Ready to dispatch in 7 to 10 days',
+        },
+        {
+          id: 'banani-banarasi-katan-silk-saree',
+          sku: 'BNN-SR-002',
+          name: 'Kashi Meenakari Katan Silk Banarasi Saree',
+          subtitle: 'Handwoven Real Zari with Kadwa Floral Motifs',
+          category: 'Sarees',
+          occasion: 'Festive & Pooja',
+          price: 18500,
+          originalPrice: 22000,
+          isNew: true,
+          isBestSeller: true,
+          isReadyToShip: true,
+          colors: [
+            { name: 'Emerald Green', hex: '#1B4D3E' },
+            { name: 'Vermilion Red', hex: '#9B111E' },
+            { name: 'Royal Mustard', hex: '#C59B27' },
+          ],
+          sizes: ['Unstitched', 'Custom Fit'],
+          fabric: '100% Pure Katan Silk (Silk Mark Certified)',
+          images: [
+            'assets/2.png',
+            'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Woven across 28 days by master weavers in Varanasi with Kashi Meenakari booti and tested gold electroplated zari.',
+          editorialNote: 'Generational heirloom suitable for weddings and pujas.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Varanasi (Silk Mark Certified)',
+          dispatchTime: 'Ready to Ship (Dispatches in 24 Hours)',
+        },
+        {
+          id: 'banani-velvet-embroidered-sharara',
+          sku: 'BNN-SH-003',
+          name: 'Noor Plum Embroidered Velvet Sharara Set',
+          subtitle: 'Micro Velvet Kurta with Flared Georgette Sharara & Organza Dupatta',
+          category: 'Suits & Shararas',
+          occasion: 'Sangeet & Cocktail',
+          price: 24500,
+          originalPrice: 28000,
+          isNew: true,
+          isBestSeller: true,
+          isReadyToShip: true,
+          colors: [
+            { name: 'Royal Plum', hex: '#4A154B' },
+            { name: 'Midnight Navy', hex: '#1B263B' },
+          ],
+          sizes: ['XS', 'S', 'M', 'L', 'XL'],
+          fabric: 'Micro Velvet Kurta & Pure Georgette Sharara',
+          images: [
+            'assets/3.png',
+            'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Exemplifying winter festive luxury with intricate pitta zari neckline embroidery and a voluminous 3-tier sharara.',
+          editorialNote: 'Ideal for winter sangeet celebrations.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Delhi Atelier',
+          dispatchTime: 'Ready to Ship (Dispatches in 24 Hours)',
+        },
+        {
+          id: 'banani-organza-pastel-saree',
+          sku: 'BNN-SR-004',
+          name: 'Aafreen Rose Gold Hand-Embroidered Organza Saree',
+          subtitle: 'Sheer Silk Organza with Delicate Resham & Mukaish Border',
+          category: 'Sarees',
+          occasion: 'Sangeet & Cocktail',
+          price: 14200,
+          originalPrice: 16500,
+          isNew: true,
+          isReadyToShip: true,
+          colors: [
+            { name: 'Blush Rose', hex: '#E8B4B8' },
+            { name: 'Powder Blue', hex: '#A3C1AD' },
+          ],
+          sizes: ['Unstitched', 'Custom Fit'],
+          fabric: 'Pure Silk Organza',
+          images: [
+            'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Airy and ethereal sheer silk organza saree with delicate floral cutwork border.',
+          editorialNote: 'Style with modern pearl jewelry.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Delhi Studio',
+          dispatchTime: 'Ready to Ship (Dispatches in 24 Hours)',
+        },
+        {
+          id: 'banani-anarkali-suit-gown',
+          sku: 'BNN-AN-005',
+          name: 'Gulzar Mustard Gotapatti Anarkali Suit Set',
+          subtitle: 'Flared Chinon Anarkali with Traditional Gotapatti',
+          category: 'Anarkalis',
+          occasion: 'Haldi & Mehendi',
+          price: 16800,
+          originalPrice: 19500,
+          isBestSeller: true,
+          isReadyToShip: true,
+          colors: [
+            { name: 'Haldi Mustard', hex: '#E5A93C' },
+            { name: 'Sage Green', hex: '#87A96B' },
+          ],
+          sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+          fabric: 'Pure Chinon Chiffon',
+          images: [
+            'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Festive 48-kali flare Anarkali with Jaipur gotapatti work on yoke and sleeves.',
+          editorialNote: 'The ultimate ensemble for Haldi and Mehendi.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Jaipur & Delhi',
+          dispatchTime: 'Ready to Ship (Dispatches in 24 Hours)',
+        },
+        {
+          id: 'banani-drape-gown-indo-western',
+          sku: 'BNN-GW-006',
+          name: 'Nazneen Emerald Pre-Draped Saree Gown',
+          subtitle: 'Sculpted Georgette with Corset Yoke',
+          category: 'Gowns & Indo-Western',
+          occasion: 'Reception',
+          price: 22000,
+          originalPrice: 25500,
+          isNew: true,
+          colors: [
+            { name: 'Emerald Jewel', hex: '#004B23' },
+            { name: 'Burgundy Wine', hex: '#4A171B' },
+          ],
+          sizes: ['XS', 'S', 'M', 'L', 'XL'],
+          fabric: 'Stretch Georgette & Tulle',
+          images: [
+            'assets/4.png',
+            'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Pre-draped silhouette combining saree pallu flow with the structure of a couture evening gown.',
+          editorialNote: 'Zip up and step out in 60 seconds.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Delhi Atelier',
+          dispatchTime: 'Dispatches in 4-6 business days',
+        },
+        {
+          id: 'banani-mens-raw-silk-sherwani',
+          sku: 'BNN-MN-007',
+          name: 'Shahzada Ivory & Gold Zari Royal Groom Sherwani',
+          subtitle: 'Pure Matka Silk with Resham Floral Jaal',
+          category: "Men's Wear",
+          occasion: 'Bridal',
+          price: 36500,
+          originalPrice: 42000,
+          isNew: true,
+          isBestSeller: true,
+          colors: [
+            { name: 'Royal Ivory', hex: '#FDFBF7' },
+            { name: 'Vintage Gold', hex: '#D4AF37' },
+          ],
+          sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+          fabric: 'Pure Matka Silk & Brocade',
+          images: [
+            'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Complete 4-piece set includes sherwani jacket, inner silk kurta, churidar, and embroidered stole.',
+          editorialNote: 'Coordinates with crimson bridal lehengas.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Delhi Master Tailors',
+          dispatchTime: 'Dispatches in 7 to 10 days',
+        },
+        {
+          id: 'banani-pastel-sangeet-lehenga',
+          sku: 'BNN-LH-009',
+          name: 'Mehrunissa Powder Blue Mirror-Work Sangeet Lehenga',
+          subtitle: 'Georgette Lehenga with Real Mirror & Silver Zari',
+          category: 'Lehengas',
+          occasion: 'Sangeet & Cocktail',
+          price: 32000,
+          originalPrice: 38000,
+          isBestSeller: true,
+          isReadyToShip: true,
+          colors: [
+            { name: 'Powder Blue', hex: '#99B8C8' },
+            { name: 'Mint Green', hex: '#A2C5AC' },
+          ],
+          sizes: ['Unstitched', 'S', 'M', 'L', 'XL'],
+          fabric: 'Pure Viscose Georgette',
+          images: [
+            'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1200&q=85',
+          ],
+          description: 'Crafted in lightweight georgette with genuine mirror embellishments and 6-meter twirl flare.',
+          editorialNote: 'Lightweight and easy to dance in.',
+          careInstructions: ['Dry Clean Only'],
+          origin: 'Delhi & Lucknow',
+          dispatchTime: 'Ready to Ship (Dispatches in 48 Hours)',
+        },
+      ];
+
+      // 2. STORE CLASS
+      class Store {
+        constructor() {
+          this.products = [...BANANI_PRODUCTS];
+          this.categoryStories = [...CATEGORY_STORIES];
+          this.currencies = CURRENCIES;
+          this.promoCodes = PROMO_CODES;
+
+          this.cart = this.loadStorage('banani_cart', []);
+          this.wishlist = this.loadStorage('banani_wishlist', []);
+          this.currency = this.loadStorage('banani_currency', 'INR');
+          this.orders = this.loadStorage('banani_orders', [
+            {
+              id: 'ord-1',
+              orderNumber: 'BNN-8921',
+              items: [{ product: BANANI_PRODUCTS[1], selectedSize: 'Unstitched', quantity: 1 }],
+              total: 18500,
+              status: 'In Transit',
+              trackingNumber: 'BLUEDART-DEL-984210',
+              paymentMethod: 'UPI (Instant)',
+            }
+          ]);
+
+          this.filters = { category: 'All', occasion: 'All', sortBy: 'featured', readyToShipOnly: false };
+          this.appliedCoupon = null;
+          this.couponDiscountPercent = 0;
+          this.activeProductModal = null;
+          this.activeStoryModal = null;
+          this.isGlobalVideoMuted = true;
+          this.storyViewMode = 'videos';
+          this.currentHeroSlide = 0;
+          this.heroTimer = null;
+          this.toasts = [];
+
+          this.modals = { bag: false, wishlist: false, search: false, videoShopping: false, checkout: false, account: false, sizeGuide: false };
+        }
+
+        loadStorage(k, def) {
+          try { const s = localStorage.getItem(k); return s ? JSON.parse(s) : def; } catch { return def; }
+        }
+        saveStorage(k, v) {
+          try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {}
+        }
+
+        setCurrency(c) {
+          if (this.currencies[c]) {
+            this.currency = c;
+            this.saveStorage('banani_currency', c);
+            this.render();
+          }
+        }
+
+        formatPrice(amountInINR) {
+          const cur = this.currencies[this.currency] || this.currencies.INR;
+          const conv = amountInINR * cur.rate;
+          if (this.currency === 'INR') return `₹${amountInINR.toLocaleString('en-IN')}`;
+          return `${cur.symbol}${Math.round(conv).toLocaleString()}`;
+        }
+
+        addToCart(product, size = 'Unstitched', color = null, quantity = 1) {
+          const selColor = color || (product.colors && product.colors[0]) || { name: 'Standard', hex: '#8B1D2C' };
+          const idx = this.cart.findIndex(it => it.product.id === product.id && it.selectedSize === size);
+          if (idx > -1) {
+            this.cart[idx].quantity += quantity;
+          } else {
+            this.cart.push({ id: `${product.id}-${Date.now()}`, product, selectedSize: size, selectedColor: selColor, quantity });
+          }
+          this.saveStorage('banani_cart', this.cart);
+          this.showToast('Added to Shopping Bag', `${product.name} (${size})`, 'success');
+          this.render();
+        }
+
+        removeFromCart(id) {
+          this.cart = this.cart.filter(it => it.id !== id);
+          this.saveStorage('banani_cart', this.cart);
+          this.render();
+        }
+
+        updateCartQuantity(id, qty) {
+          if (qty <= 0) { this.removeFromCart(id); return; }
+          const it = this.cart.find(i => i.id === id);
+          if (it) { it.quantity = qty; this.saveStorage('banani_cart', this.cart); this.render(); }
+        }
+
+        applyCoupon(code) {
+          const clean = code.trim().toUpperCase();
+          const p = this.promoCodes[clean];
+          if (!p) { this.showToast('Invalid Coupon Code', 'Try BANANI10', 'info'); return; }
+          if (this.getCartSubtotal() < p.minAmount) {
+            this.showToast('Order Min Not Met', `Minimum ₹${p.minAmount.toLocaleString()} required`, 'info');
+            return;
+          }
+          this.appliedCoupon = clean;
+          this.couponDiscountPercent = p.discountPercent;
+          this.showToast(`Code ${clean} Applied!`, `${p.discountPercent}% off applied`, 'success');
+          this.render();
+        }
+
+        getCartCount() { return this.cart.reduce((s, i) => s + i.quantity, 0); }
+        getCartSubtotal() { return this.cart.reduce((s, i) => s + i.product.price * i.quantity, 0); }
+        getCartDiscount() { return Math.round((this.getCartSubtotal() * this.couponDiscountPercent) / 100); }
+        getCartTotal() { return Math.max(0, this.getCartSubtotal() - this.getCartDiscount()); }
+
+        toggleWishlist(prod) {
+          const ex = this.wishlist.some(it => it.product.id === prod.id);
+          if (ex) {
+            this.wishlist = this.wishlist.filter(it => it.product.id !== prod.id);
+            this.showToast('Removed from Wishlist', prod.name, 'info');
+          } else {
+            this.wishlist.push({ product: prod });
+            this.showToast('Saved to Wishlist', prod.name, 'success');
+          }
+          this.saveStorage('banani_wishlist', this.wishlist);
+          this.render();
+        }
+
+        isInWishlist(id) { return this.wishlist.some(it => it.product.id === id); }
+
+        moveWishlistToCart(prod) {
+          this.addToCart(prod, prod.sizes ? prod.sizes[0] : 'Unstitched', prod.colors ? prod.colors[0] : null, 1);
+          this.wishlist = this.wishlist.filter(it => it.product.id !== prod.id);
+          this.saveStorage('banani_wishlist', this.wishlist);
+          this.render();
+        }
+
+        createOrder(fName, phone, city, address) {
+          const num = Math.floor(1000 + Math.random() * 9000);
+          const ord = {
+            id: `ord-${Date.now()}`,
+            orderNumber: `BNN-${num}`,
+            items: [...this.cart],
+            total: this.getCartTotal(),
+            trackingNumber: `BD-EXP-${Math.floor(100000 + Math.random() * 900000)}`,
+            status: 'Processing',
+            paymentMethod: 'UPI (Instant)',
+          };
+          this.orders.unshift(ord);
+          this.saveStorage('banani_orders', this.orders);
+          this.cart = [];
+          this.appliedCoupon = null;
+          this.couponDiscountPercent = 0;
+          this.saveStorage('banani_cart', []);
+          this.render();
+          return ord;
+        }
+
+        showToast(msg, sub, type = 'success') {
+          const id = `t-${Date.now()}`;
+          this.toasts.push({ id, msg, sub, type });
+          this.renderToasts();
+          setTimeout(() => { this.toasts = this.toasts.filter(t => t.id !== id); this.renderToasts(); }, 4000);
+        }
+
+        renderToasts() {
+          const c = document.getElementById('toast-container');
+          if (!c) return;
+          c.innerHTML = this.toasts.map(t => `
+            <div class="pointer-events-auto p-3 sm:p-3.5 rounded-xl bg-[#1C1917] text-white shadow-2xl border border-[#302B27] flex items-start gap-2.5 sm:gap-3 animate-fadeIn text-xs">
+              <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#8B1D2C] text-[#C5A059] flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="${t.type === 'success' ? 'check' : 'info'}" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h5 class="font-serif-luxury text-xs font-bold text-white">${t.msg}</h5>
+                ${t.sub ? `<p class="text-[10px] sm:text-[11px] text-white/70 truncate mt-0.5">${t.sub}</p>` : ''}
+              </div>
+            </div>
+          `).join('');
+          if (window.lucide) window.lucide.createIcons();
+        }
+
+        openModal(name) {
+          this.modals[name] = true;
+          document.body.style.overflow = 'hidden';
+          this.render();
+        }
+
+        closeModal(name) {
+          this.modals[name] = false;
+          if (name === 'productDetail') this.activeProductModal = null;
+          if (name === 'storyReel') this.activeStoryModal = null;
+          document.body.style.overflow = '';
+          this.render();
+        }
+
+        openProductDetail(id) {
+          const p = this.products.find(x => x.id === id);
+          if (p) { this.activeProductModal = p; this.openModal('productDetail'); }
+        }
+
+        openStoryReel(id) {
+          const s = this.categoryStories.find(x => x.id === id);
+          if (s) { this.activeStoryModal = s; this.openModal('storyReel'); }
+        }
+
+        filterByCategory(cat) {
+          this.filters.category = cat;
+          this.filters.occasion = 'All';
+          this.filters.readyToShipOnly = false;
+          this.render();
+          const el = document.getElementById('catalog-section');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        filterByOccasion(occ) {
+          this.filters.category = 'All';
+          this.filters.occasion = occ;
+          this.filters.readyToShipOnly = false;
+          this.render();
+          const el = document.getElementById('catalog-section');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        toggleGlobalAudio() {
+          this.isGlobalVideoMuted = !this.isGlobalVideoMuted;
+          document.querySelectorAll('video').forEach(v => v.muted = this.isGlobalVideoMuted);
+          const lbl = document.getElementById('audio-toggle-label');
+          if (lbl) lbl.textContent = this.isGlobalVideoMuted ? 'Audio Off' : 'Audio On';
+        }
+
+        setStoryViewMode(mode) {
+          this.storyViewMode = mode;
+          this.render();
+        }
+
+        render() {
+          // Nav Badges
+          const cartCount = this.getCartCount();
+          const wishCount = this.wishlist.length;
+          const cartBadge = document.getElementById('nav-cart-count');
+          if (cartBadge) { cartBadge.textContent = cartCount; cartBadge.classList.toggle('hidden', cartCount === 0); }
+          const wishBadge = document.getElementById('nav-wishlist-count');
+          if (wishBadge) { wishBadge.textContent = wishCount; wishBadge.classList.toggle('hidden', wishCount === 0); }
+          const currLabel = document.getElementById('current-currency-label');
+          if (currLabel) currLabel.textContent = this.currency;
+
+          // Currency Dropdown
+          const curOpts = document.getElementById('currency-options');
+          if (curOpts) {
+            curOpts.innerHTML = Object.keys(this.currencies).map(c => `
+              <button type="button" onclick="window.app.setCurrency('${c}')" class="w-full text-left px-3 py-1.5 text-xs hover:bg-[#FAF8F5] ${this.currency === c ? 'font-bold text-[#8B1D2C] bg-[#FAF8F5]' : 'text-[#57534E]'}">
+                ${this.currencies[c].label}
+              </button>
+            `).join('');
+          }
+
+          // Category Stories Videos Grid
+          const catCont = document.getElementById('category-stories-container');
+          if (catCont) {
+            if (this.storyViewMode === 'videos') {
+              catCont.innerHTML = this.categoryStories.map(c => `
+                <div onclick="window.app.filterByCategory('${c.category}')" class="group relative rounded-2xl overflow-hidden cursor-pointer bg-[#1C1917] border border-[#E7E2DA] hover:border-[#8B1D2C] shadow-md flex flex-col justify-between" style="min-height: 270px;">
+                  <div class="absolute inset-0 w-full h-full overflow-hidden bg-[#1C1917]">
+                    <video src="${c.videoUrl}" poster="${c.image}" autoplay loop ${this.isGlobalVideoMuted ? 'muted' : ''} playsinline class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"></video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/40 pointer-events-none"></div>
+                  </div>
+                  <div class="relative z-10 p-2.5 sm:p-3 flex items-center justify-between">
+                    <span class="px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold uppercase bg-white/90 text-[#8B1D2C]">${c.badge}</span>
+                    <button type="button" onclick="event.stopPropagation(); window.app.openStoryReel('${c.id}')" class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-black/50 hover:bg-[#8B1D2C] text-white flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                    </button>
+                  </div>
+                  <div class="relative z-10 p-3 text-white space-y-1">
+                    <span class="text-[9px] sm:text-[10px] text-[#C5A059] font-mono font-semibold">${c.count}</span>
+                    <h3 class="font-serif-luxury text-base sm:text-lg font-bold">${c.name}</h3>
+                    <p class="text-[10px] sm:text-[11px] text-white/80 line-clamp-2">${c.tagline}</p>
+                    <div class="pt-1.5 border-t border-white/20 flex items-center justify-between text-[10px] sm:text-[11px] font-semibold text-[#C5A059]">
+                      <span class="flex items-center gap-1"><i data-lucide="film" class="w-3 h-3"></i> Video</span>
+                      <span class="text-white flex items-center gap-1">Shop <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                    </div>
+                  </div>
+                </div>
+              `).join('');
+            } else {
+              catCont.innerHTML = this.categoryStories.map(c => `
+                <div onclick="window.app.filterByCategory('${c.category}')" class="group flex flex-col items-center text-center cursor-pointer">
+                  <div class="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden p-1 ring-2 ring-[#C5A059] hover:ring-[#8B1D2C] shadow-xs">
+                    <video src="${c.videoUrl}" poster="${c.image}" autoplay loop muted playsinline class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-500"></video>
+                  </div>
+                  <h3 class="font-serif-luxury text-sm sm:text-base font-bold mt-2 sm:mt-3">${c.name}</h3>
+                  <span class="text-[10px] sm:text-[11px] text-[#78716C]">${c.count}</span>
+                </div>
+              `).join('');
+            }
+          }
+
+          // Products Catalog Grid
+          const prodCont = document.getElementById('products-grid-container');
+          if (prodCont) {
+            const filtered = this.products.filter(p => {
+              if (this.filters.category !== 'All' && p.category !== this.filters.category) return false;
+              if (this.filters.occasion !== 'All' && p.occasion !== this.filters.occasion) return false;
+              if (this.filters.readyToShipOnly && !p.isReadyToShip) return false;
+              return true;
+            });
+
+            document.getElementById('product-count-label').innerHTML = `Showing <span class="font-bold text-[#1C1917]">${filtered.length}</span> Masterpieces`;
+
+            prodCont.innerHTML = filtered.map(p => {
+              const inWish = this.isInWishlist(p.id);
+              const disc = p.originalPrice ? Math.round(((p.originalPrice - p.price) / p.originalPrice) * 100) : 0;
+              return `
+                <div onclick="window.app.openProductDetail('${p.id}')" class="group bg-white rounded-xl border border-[#E7E2DA] overflow-hidden hover:shadow-lg transition-all flex flex-col cursor-pointer">
+                  <div class="relative aspect-[3/4] overflow-hidden bg-[#FAF8F5]">
+                    <img src="${p.images[0]}" alt="${p.name}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    <div class="absolute top-2 left-2 sm:top-2.5 sm:left-2.5 flex flex-col gap-1 z-10">
+                      ${p.isReadyToShip ? `<span class="px-1.5 py-0.5 sm:px-2 rounded bg-[#8B1D2C] text-white text-[9px] sm:text-[10px] font-bold uppercase">⚡ READY TO SHIP</span>` : ''}
+                      ${p.isBestSeller && !p.isReadyToShip ? `<span class="px-1.5 py-0.5 sm:px-2 rounded bg-[#C5A059] text-white text-[9px] sm:text-[10px] font-bold uppercase">BEST SELLER</span>` : ''}
+                    </div>
+                    <button type="button" onclick="event.stopPropagation(); window.app.toggleWishlist(window.app.products.find(x=>x.id==='${p.id}'))" class="absolute top-2 right-2 sm:top-2.5 sm:right-2.5 z-10 w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center ${inWish ? 'bg-[#8B1D2C] text-white' : 'bg-white/90 text-[#1C1917]'}" aria-label="Toggle Wishlist">
+                      <i data-lucide="heart" class="w-3.5 h-3.5 sm:w-4 sm:h-4 ${inWish ? 'fill-current' : ''}"></i>
+                    </button>
+                    <div class="absolute inset-x-2.5 bottom-2.5 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <button type="button" onclick="event.stopPropagation(); window.app.addToCart(window.app.products.find(x=>x.id==='${p.id}'))" class="w-full py-1.5 sm:py-2 rounded-lg bg-white hover:bg-[#8B1D2C] hover:text-white text-[#1C1917] font-semibold text-xs border border-[#E7E2DA] shadow-md flex items-center justify-center gap-1">
+                        <i data-lucide="shopping-bag" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i> QUICK ADD
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-2.5 sm:p-4 flex-1 flex flex-col justify-between space-y-1.5 sm:space-y-2">
+                    <div>
+                      <p class="text-[10px] sm:text-[11px] text-[#8B1D2C] font-semibold uppercase truncate">${p.fabric}</p>
+                      <h3 class="font-serif-luxury text-xs sm:text-base font-bold text-[#1C1917] truncate mt-0.5">${p.name}</h3>
+                    </div>
+                    <div class="flex items-baseline gap-1.5 sm:gap-2 pt-1 border-t border-[#F0EAE1]">
+                      <span class="text-xs sm:text-base font-bold text-[#1C1917]">${this.formatPrice(p.price)}</span>
+                      ${p.originalPrice ? `<span class="text-[10px] sm:text-xs text-[#78716C] line-through">${this.formatPrice(p.originalPrice)}</span><span class="text-[9px] sm:text-[11px] text-emerald-700 font-bold hidden sm:inline">(${disc}% OFF)</span>` : ''}
+                    </div>
+                  </div>
+                </div>
+              `;
+            }).join('');
+          }
+
+          // Cart Drawer
+          const cartCont = document.getElementById('cart-items-container');
+          if (cartCont) {
+            const sub = this.getCartSubtotal();
+            const disc = this.getCartDiscount();
+            const tot = this.getCartTotal();
+
+            document.getElementById('cart-subtotal-val').textContent = this.formatPrice(sub);
+            document.getElementById('cart-total-val').textContent = this.formatPrice(tot);
+            const discRow = document.getElementById('cart-discount-row');
+            if (discRow) {
+              discRow.classList.toggle('hidden', disc === 0);
+              document.getElementById('cart-discount-val').textContent = `- ${this.formatPrice(disc)}`;
+            }
+
+            const freeProg = document.getElementById('free-shipping-progress');
+            const freeTxt = document.getElementById('free-shipping-text');
+            if (freeProg) freeProg.style.width = `${Math.min(100, Math.round((sub / 2999) * 100))}%`;
+            if (freeTxt) {
+              freeTxt.innerHTML = sub >= 2999
+                ? `🎉 <strong class="text-emerald-800">You unlocked Free Worldwide Express Shipping!</strong>`
+                : `Add <strong class="font-bold text-[#8B1D2C]">${this.formatPrice(2999 - sub)}</strong> more for <strong>FREE Express Shipping</strong>`;
+            }
+
+            if (this.cart.length === 0) {
+              cartCont.innerHTML = `<div class="py-16 text-center text-xs text-[#78716C]">Your Shopping Bag is Empty</div>`;
+            } else {
+              cartCont.innerHTML = this.cart.map(it => `
+                <div class="p-3 rounded-xl border border-[#E7E2DA] bg-[#FAF8F5] flex gap-3 items-start">
+                  <img src="${it.product.images[0]}" class="w-16 h-20 sm:w-18 sm:h-22 rounded-lg object-cover border shrink-0" />
+                  <div class="flex-1 min-w-0">
+                    <h4 class="font-serif-luxury text-xs font-bold text-[#1C1917] truncate">${it.product.name}</h4>
+                    <p class="text-[11px] text-[#78716C]">Size: ${it.selectedSize}</p>
+                    <div class="flex items-center justify-between pt-2 mt-2 border-t border-[#E7E2DA]">
+                      <div class="flex items-center gap-2 border bg-white rounded px-2 py-0.5 text-xs">
+                        <button onclick="window.app.updateCartQuantity('${it.id}', ${it.quantity - 1})">-</button>
+                        <span class="font-bold">${it.quantity}</span>
+                        <button onclick="window.app.updateCartQuantity('${it.id}', ${it.quantity + 1})">+</button>
+                      </div>
+                      <span class="text-xs font-bold text-[#1C1917]">${this.formatPrice(it.product.price * it.quantity)}</span>
+                    </div>
+                  </div>
+                </div>
+              `).join('');
+            }
+          }
+
+          // Wishlist Drawer
+          const wishCont = document.getElementById('wishlist-items-container');
+          if (wishCont) {
+            if (this.wishlist.length === 0) {
+              wishCont.innerHTML = `<div class="py-16 text-center text-xs text-[#78716C]">Your Wishlist is Empty</div>`;
+            } else {
+              wishCont.innerHTML = this.wishlist.map(({ product }) => `
+                <div class="p-3 rounded-xl border border-[#E7E2DA] bg-[#FAF8F5] flex gap-3 items-center">
+                  <img src="${product.images[0]}" class="w-16 h-20 rounded-lg object-cover shrink-0" />
+                  <div class="flex-1 min-w-0">
+                    <h4 class="font-serif-luxury text-xs font-bold truncate">${product.name}</h4>
+                    <p class="text-xs font-bold mt-0.5">${this.formatPrice(product.price)}</p>
+                    <div class="flex items-center gap-2 pt-2 mt-2 border-t border-[#E7E2DA]">
+                      <button onclick="window.app.moveWishlistToCart(window.app.products.find(x=>x.id==='${product.id}'))" class="flex-1 py-1.5 rounded bg-[#8B1D2C] text-white text-[11px] font-semibold">Move to Bag</button>
+                      <button onclick="window.app.toggleWishlist(window.app.products.find(x=>x.id==='${product.id}'))" class="p-1.5 text-[#78716C]"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                    </div>
+                  </div>
+                </div>
+              `).join('');
+            }
+          }
+
+          // Product Detail Modal
+          const pModal = document.getElementById('product-detail-modal');
+          if (pModal) {
+            if (this.activeProductModal && this.modals.productDetail) {
+              pModal.classList.remove('hidden');
+              const p = this.activeProductModal;
+              const disc = p.originalPrice ? Math.round(((p.originalPrice - p.price) / p.originalPrice) * 100) : 0;
+              document.getElementById('product-detail-body').innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 p-4 sm:p-8">
+                  <div class="lg:col-span-6">
+                    <img id="detail-main-img" src="${p.images[0]}" class="w-full aspect-[3/4] object-cover rounded-2xl border border-[#E7E2DA]" />
+                  </div>
+                  <div class="lg:col-span-6 space-y-3.5 sm:space-y-4">
+                    <div>
+                      <span class="text-xs font-semibold text-[#8B1D2C] uppercase tracking-wider">${p.category} • ${p.fabric}</span>
+                      <h2 class="font-serif-luxury text-xl sm:text-2xl font-bold text-[#1C1917] mt-1">${p.name}</h2>
+                      <p class="text-xs text-[#78716C]">SKU: ${p.sku} | Handcrafted in ${p.origin}</p>
+                    </div>
+                    <div class="p-3 sm:p-3.5 rounded-xl bg-[#FAF8F5] border border-[#E7E2DA] flex items-baseline gap-2.5 sm:gap-3">
+                      <span class="font-serif-luxury text-xl sm:text-2xl font-bold text-[#1C1917]">${this.formatPrice(p.price)}</span>
+                      ${p.originalPrice ? `<span class="text-xs line-through text-[#78716C]">${this.formatPrice(p.originalPrice)}</span><span class="text-xs font-bold text-emerald-700">(${disc}% OFF)</span>` : ''}
+                    </div>
+                    <div>
+                      <label class="block text-xs font-semibold mb-1.5">Size / Tailoring:</label>
+                      <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                        ${p.sizes.map((sz, i) => `
+                          <button type="button" class="detail-sz-btn px-3 py-1.5 rounded-lg text-xs border ${i === 0 ? 'bg-[#8B1D2C] text-white' : 'bg-[#FAF8F5]'}">${sz}</button>
+                        `).join('')}
+                      </div>
+                    </div>
+                    <div class="pt-2 sm:pt-3 space-y-2">
+                      <button type="button" onclick="window.app.addToCart(window.app.activeProductModal); window.app.closeModal('productDetail'); window.app.openModal('bag');" class="w-full py-3 sm:py-3.5 rounded-lg bg-[#8B1D2C] hover:bg-[#66131F] text-white text-xs uppercase font-semibold tracking-wider shadow-md">
+                        ADD TO SHOPPING BAG
+                      </button>
+                    </div>
+                    <p class="text-xs text-[#57534E] leading-relaxed pt-2">${p.description}</p>
+                  </div>
+                </div>
+              `;
+            } else {
+              pModal.classList.add('hidden');
+            }
+          }
+
+          // Story Reel Modal
+          const reelModal = document.getElementById('story-reel-modal');
+          if (reelModal) {
+            if (this.activeStoryModal && this.modals.storyReel) {
+              reelModal.classList.remove('hidden');
+              const s = this.activeStoryModal;
+              document.getElementById('story-reel-body').innerHTML = `
+                <div class="relative w-full max-w-4xl h-[88vh] bg-[#1C1917] rounded-2xl overflow-hidden border border-[#302B27] flex flex-col md:flex-row">
+                  <div class="relative flex-1 bg-black flex items-center justify-center">
+                    <video src="${s.videoUrl}" poster="${s.image}" autoplay loop ${this.isGlobalVideoMuted ? 'muted' : ''} playsinline class="w-full h-full object-cover"></video>
+                    <button onclick="window.app.closeModal('storyReel')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center md:hidden"><i data-lucide="x" class="w-4 h-4"></i></button>
+                  </div>
+                  <div class="w-full md:w-80 bg-[#1C1917] p-5 sm:p-6 text-white flex flex-col justify-between">
+                    <div>
+                      <span class="text-[10px] text-[#C5A059] uppercase font-bold tracking-wider">${s.badge}</span>
+                      <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold mt-1">${s.name}</h3>
+                      <p class="text-xs text-white/70 mt-2">${s.tagline}</p>
+                    </div>
+                    <button onclick="window.app.closeModal('storyReel'); window.app.filterByCategory('${s.category}')" class="w-full py-3 rounded-lg bg-[#8B1D2C] text-white text-xs uppercase font-semibold">
+                      Explore All ${s.name}
+                    </button>
+                  </div>
+                </div>
+              `;
+            } else {
+              reelModal.classList.add('hidden');
+            }
+          }
+
+          // Account Orders
+          const accList = document.getElementById('account-orders-list');
+          if (accList) {
+            accList.innerHTML = this.orders.map(o => `
+              <div class="p-3.5 rounded-xl bg-[#FAF8F5] border border-[#E7E2DA] text-xs space-y-2">
+                <div class="flex justify-between font-bold"><span>Order ${o.orderNumber}</span><span class="text-emerald-700">● ${o.status}</span></div>
+                <p class="text-[#78716C]">Tracking: ${o.trackingNumber}</p>
+                <p class="font-bold text-[#8B1D2C]">${this.formatPrice(o.total)}</p>
+              </div>
+            `).join('');
+          }
+
+          if (window.lucide) window.lucide.createIcons();
+        }
+
+        initHero() {
+          const slides = document.querySelectorAll('.hero-slide');
+          const dots = document.querySelectorAll('.hero-dot');
+          if (slides.length === 0) return;
+
+          const showSlide = (idx) => {
+            this.currentHeroSlide = (idx + slides.length) % slides.length;
+            slides.forEach((sl, i) => {
+              sl.classList.toggle('opacity-100', i === this.currentHeroSlide);
+              sl.classList.toggle('opacity-0', i !== this.currentHeroSlide);
+              sl.classList.toggle('pointer-events-none', i !== this.currentHeroSlide);
+            });
+            dots.forEach((d, i) => {
+              d.classList.toggle('w-8', i === this.currentHeroSlide);
+              d.classList.toggle('bg-[#C5A059]', i === this.currentHeroSlide);
+              d.classList.toggle('w-2', i !== this.currentHeroSlide);
+              d.classList.toggle('bg-white/50', i !== this.currentHeroSlide);
+            });
+          };
+
+          window.heroNext = () => showSlide(this.currentHeroSlide + 1);
+          window.heroPrev = () => showSlide(this.currentHeroSlide - 1);
+          window.heroGoTo = (i) => showSlide(i);
+
+          if (this.heroTimer) clearInterval(this.heroTimer);
+          this.heroTimer = setInterval(() => window.heroNext(), 5500);
+
+          // Touch swipe navigation for mobile
+          let touchStartX = 0;
+          let touchEndX = 0;
+          const heroSec = document.getElementById('hero-carousel-section');
+          if (heroSec) {
+            heroSec.addEventListener('touchstart', (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+            heroSec.addEventListener('touchend', (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              if (touchStartX - touchEndX > 45) window.heroNext();
+              if (touchEndX - touchStartX > 45) window.heroPrev();
+            }, { passive: true });
+          }
+        }
+      }
+
+      // 3. INITIALIZATION
+      window.addEventListener('DOMContentLoaded', () => {
+        window.app = new Store();
+        window.app.render();
+        window.app.initHero();
+
+        const searchInput = document.getElementById('modal-search-input');
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase().trim();
+            const list = document.getElementById('search-results-list');
+            const pop = document.getElementById('popular-searches-box');
+            if (!q) { list.innerHTML = ''; pop.classList.remove('hidden'); return; }
+            pop.classList.add('hidden');
+            const matches = window.app.products.filter(p => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
+            list.innerHTML = matches.map(p => `
+              <div onclick="window.app.closeModal('search'); window.app.openProductDetail('${p.id}')" class="p-2.5 rounded-lg border bg-[#FAF8F5] flex gap-3 items-center cursor-pointer">
+                <img src="${p.images[0]}" class="w-12 h-14 object-cover rounded" />
+                <div><h4 class="font-serif-luxury text-xs font-bold">${p.name}</h4><p class="text-xs font-bold text-[#8B1D2C]">${window.app.formatPrice(p.price)}</p></div>
+              </div>
+            `).join('');
+          });
+        }
+
+        const videoForm = document.getElementById('video-shopping-form');
+        if (videoForm) {
+          videoForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('video-form-fields').classList.add('hidden');
+            document.getElementById('video-form-success').classList.remove('hidden');
+            window.app.showToast('Appointment Confirmed!', 'Senior Stylist will message on WhatsApp', 'success');
+          });
+        }
+
+        const vipForm = document.getElementById('vip-newsletter-form');
+        if (vipForm) {
+          vipForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            vipForm.classList.add('hidden');
+            document.getElementById('vip-success-box').classList.remove('hidden');
+            window.app.showToast('Code BANANI10 Activated!', '10% off your order', 'success');
+          });
+        }
+
+        window.proceedCheckout = (step) => {
+          document.querySelectorAll('.checkout-step-pane').forEach((p, i) => p.classList.toggle('hidden', i + 1 !== step));
+        };
+
+        window.placeFinalOrder = () => {
+          const ord = window.app.createOrder();
+          if (window.confetti) window.confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+          document.getElementById('chk-order-number-val').textContent = ord.orderNumber;
+          document.getElementById('checkout-form-pane').classList.add('hidden');
+          document.getElementById('checkout-success-pane').classList.remove('hidden');
+        };
+
+        // Continuous modal synchronizer
+        setInterval(() => {
+          if (window.app && window.app.modals) {
+            const bag = document.getElementById('cart-drawer-modal');
+            if (bag) bag.classList.toggle('hidden', !window.app.modals.bag);
+            const wish = document.getElementById('wishlist-drawer-modal');
+            if (wish) wish.classList.toggle('hidden', !window.app.modals.wishlist);
+            const srch = document.getElementById('search-modal');
+            if (srch) srch.classList.toggle('hidden', !window.app.modals.search);
+            const vid = document.getElementById('video-shopping-modal');
+            if (vid) vid.classList.toggle('hidden', !window.app.modals.videoShopping);
+            const chk = document.getElementById('checkout-modal');
+            if (chk) chk.classList.toggle('hidden', !window.app.modals.checkout);
+            const acc = document.getElementById('account-modal');
+            if (acc) acc.classList.toggle('hidden', !window.app.modals.account);
+            const sz = document.getElementById('size-guide-modal');
+            if (sz) sz.classList.toggle('hidden', !window.app.modals.sizeGuide);
+          }
+        }, 50);
+      });
+    </script>
+  </body>
+</html>

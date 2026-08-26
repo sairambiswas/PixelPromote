@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E91E63"/>
+        <stop offset="60%" stop-color="#9C27B0"/>
+        <stop offset="100%" stop-color="#4A148C"/>
+      </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#grad)"/>
+  
+  <!-- Subtle decorative overlays -->
+  <circle cx="425" cy="100" r="200" fill="#00C2CB" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="75" cy="400" r="175" fill="#F5A623" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="250" cy="250" r="250" fill="#FFFFFF" opacity="0.05"/>
+  
+  <!-- Star sparkles -->
+  <circle cx="125" cy="125" r="40" fill="url(#sparkle)"/>
+  <circle cx="375" cy="375" r="30" fill="url(#sparkle)"/>
+  <circle cx="450" cy="175" r="25" fill="url(#sparkle)"/>
+  
+  <!-- Gift Art vector graphics placeholder -->
+  <g transform="translate(250, 210) scale(0.8333333333333334)">
+    <rect x="-80" y="-80" width="160" height="160" rx="24" fill="#FFFFFF" opacity="0.12" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M-50,-20 L50,-20 L50,50 L-50,50 Z" fill="#FFFFFF" opacity="0.2"/>
+    <path d="M-20,-50 L20,-50 L20,50 L-20,50 Z" fill="#F5A623" opacity="0.8"/>
+    <circle cx="0" cy="-20" r="14" fill="#00C2CB" opacity="0.9"/>
+  </g>
+
+  <!-- Embedded Photoshop-style artwork text -->
+  
+  <g transform="translate(250, 110)">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#F5A623" opacity="0.95"/>
+    <text text-anchor="middle" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#2E1000" letter-spacing="2">CHOOSE A FEELING</text>
+  </g>
+  
+  <text x="250" y="340" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="27.5" font-weight="900" fill="#FFFFFF" letter-spacing="1">
+    GRATITUDE
+  </text>
+  
+  
+  <text x="250" y="385" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#FCE4EF" letter-spacing="3">
+    FEEL THE EMOTION
+  </text>
+
+  <!-- Brand watermark -->
+  <text x="250" y="460" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.85" letter-spacing="4">
+    ✦ ARTUNIQUE • PERSONALISED LUXURY ✦
+  </text>
+</svg>

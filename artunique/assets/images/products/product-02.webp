@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="pgrad02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#FCE4EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#pgrad02)"/>
+  <!-- Product container mockup illustration -->
+  <g transform="translate(300, 260)">
+    <rect x="-160" y="-160" width="320" height="320" rx="32" fill="#FFFFFF" stroke="#D5005B" stroke-width="3" opacity="0.9"/>
+    <!-- Art representation inside product -->
+    <rect x="-130" y="-130" width="260" height="260" rx="20" fill="#D5005B" opacity="0.1"/>
+    <circle cx="0" cy="-20" r="60" fill="#D5005B" opacity="0.2"/>
+    <path d="M-60,70 Q0,0 60,70 Z" fill="#D5005B" opacity="0.25"/>
+    <text text-anchor="middle" y="10" font-family="'Playfair Display', serif" font-size="18" font-weight="bold" fill="#D5005B">Personalised Couple Frame</text>
+    <text text-anchor="middle" y="35" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="bold" fill="#A80046">Anniversary Gifts</text>
+  </g>
+  <rect x="40" y="40" width="100" height="32" rx="16" fill="#D5005B"/>
+  <text x="90" y="61" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">ARTUNIQUE</text>
+  <text x="300" y="520" text-anchor="middle" font-family="'Playfair Display', serif" font-size="24" font-weight="bold" fill="#1F2937">Personalised Couple Frame</text>
+  <text x="300" y="555" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#D5005B">₹999</text>
+</svg>

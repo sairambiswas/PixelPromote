@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E91E63"/>
+        <stop offset="60%" stop-color="#9C27B0"/>
+        <stop offset="100%" stop-color="#4A148C"/>
+      </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#grad)"/>
+  
+  <!-- Subtle decorative overlays -->
+  <circle cx="510" cy="90" r="180" fill="#00C2CB" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="90" cy="360" r="157.5" fill="#F5A623" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="300" cy="225" r="225" fill="#FFFFFF" opacity="0.05"/>
+  
+  <!-- Star sparkles -->
+  <circle cx="150" cy="112.5" r="36" fill="url(#sparkle)"/>
+  <circle cx="450" cy="337.5" r="27" fill="url(#sparkle)"/>
+  <circle cx="540" cy="157.5" r="22.5" fill="url(#sparkle)"/>
+  
+  <!-- Gift Art vector graphics placeholder -->
+  <g transform="translate(300, 189) scale(0.75)">
+    <rect x="-80" y="-80" width="160" height="160" rx="24" fill="#FFFFFF" opacity="0.12" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M-50,-20 L50,-20 L50,50 L-50,50 Z" fill="#FFFFFF" opacity="0.2"/>
+    <path d="M-20,-50 L20,-50 L20,50 L-20,50 Z" fill="#F5A623" opacity="0.8"/>
+    <circle cx="0" cy="-20" r="14" fill="#00C2CB" opacity="0.9"/>
+  </g>
+
+  <!-- Embedded Photoshop-style artwork text -->
+  
+  <g transform="translate(300, 99)">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#F5A623" opacity="0.95"/>
+    <text text-anchor="middle" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#2E1000" letter-spacing="2">✨ LIVE TRANSFORMATION</text>
+  </g>
+  
+  <text x="300" y="306" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="33" font-weight="900" fill="#FFFFFF" letter-spacing="1">
+    PHOTO TRANSFORMATION
+  </text>
+  
+  
+  <text x="300" y="346.5" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.4" font-weight="600" fill="#FCE4EF" letter-spacing="3">
+    HANDCRAFTED PROCESS
+  </text>
+
+  <!-- Brand watermark -->
+  <text x="300" y="414" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.85" letter-spacing="4">
+    ✦ ARTUNIQUE • PERSONALISED LUXURY ✦
+  </text>
+</svg>
